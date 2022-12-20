@@ -7,11 +7,11 @@ public abstract class Money {
     public abstract Money times(int multiplier);
 
     public static Dollar dollar(int amount) {
-        return new Dollar(amount);
+        return new Dollar(amount, "USD");
     }
 
     public static Franc franc(int amount) {
-        return new Franc(amount);
+        return new Franc(amount, "CHF");
     }
     public boolean equals(Object object) {
         Money money = (Money) object;
