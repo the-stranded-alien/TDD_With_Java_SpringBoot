@@ -2,6 +2,7 @@ package money.tdd;
 
 public abstract class Money {
     protected int amount;
+    protected abstract String currency();
 
     public abstract Money times(int multiplier);
 
