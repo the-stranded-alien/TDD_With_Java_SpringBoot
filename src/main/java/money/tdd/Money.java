@@ -2,7 +2,16 @@ package money.tdd;
 
 public abstract class Money {
     protected int amount;
-    protected abstract String currency();
+    protected String currency;
+
+    public Money(int amount, String currency) {
+        this.amount = amount;
+        this.currency = currency;
+    }
+
+    protected String currency() {
+        return currency;
+    };
 
     public abstract Money times(int multiplier);
 
